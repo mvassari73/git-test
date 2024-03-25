@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap'); */
+
+/* @font-face {
+    font-family: 'outfit-b';
+    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+} */
+
+/* .outfit-font-r {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit-font-b {
+    font-family: "Outfit", sans-serif;
+     font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    background-color: #D5E1EF;
+    max-width: 1440px;
+    height: 800px;
+    margin: 0 auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content-container{
+    width: 320px;
+    height: 497px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.img-container{
+    margin: 16px 16px 24px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img{
+    width: 288px;
+    height: 288px;
+}
+
+.text-container{
+    width: 288px;
+    margin: 0 auto 0;
+}
+
+.title{
+    width: 249px;
+    text-align:center ;
+    margin-left: 19px;
+    color: #1F314F;
+    font-family: "Outfit", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.subtitle{
+    margin-top: 16px;
+    text-align:center ;
+    color: #7D889E;
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .19px;
+}
+
+
+@media screen and (max-width:375px) {
+    .img{
+        content: url('../images/New Text Document.svg');
+    }
+
+    .title{
+        font-weight: 400;
+    }
+
+}
