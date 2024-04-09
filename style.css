@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Montserrat400";
+    src: url('./fonts/Montserrat400.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat500";
+    src: url('/fonts/Montserrat500.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Fraunces700";
+    src: url('./fonts/Fraunces700.ttf');
+    font-weight: 700;
+}
+
+body{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Darker-cyan: hsl(158, 35%, 25%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Montserrat400: "Montserrat400";
+    --Montserrat500: "Montserrat500";
+    --Fraunces700: "Fraunces700";
+    font-size: 14px;
+
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    background-color: var(--Cream);
+    margin: 0 auto;
+}
+
+.product{
+    display: flex;
+    background-color: var(--White);
+    width: 1200px;
+    height: 900px;
+    margin: 100px auto;
+    border-radius: 20px;
+    overflow: hidden;    
+}
+
+.img{
+    background-image: url("./images/image-product-desktop.jpg");
+    width: 600px;
+}
+
+.desc{
+    width: 530px;
+    margin-left: 70px;
+    margin-top: 40px;
+
+}
+
+.type{
+    font-family:var(--Montserrat400) ;
+    color: var(--Dark-grayish-blue);
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.title{
+    font-family: var(--Fraunces700);
+    color: var(--Very-dark-blue);
+    font-size: 80px;
+    line-height: 59px;
+    margin: 47px 0 0 0;
+}
+
+.description{
+    font-family: var(--Montserrat500);
+    color: var(--Dark-grayish-blue);
+    font-size: 27px;
+    line-height: 40px;
+    margin: 60px 0 0 0;
+}
+
+.cash{
+    margin-top: 50px;
+    display: flex;
+}
+
+.discount{
+    font-family: var(--Fraunces700);
+    color: var(--Dark-cyan);
+    font-size: 60px;
+}
+
+.fee{
+    font-family: var(--Montserrat400);
+    color: var(--Dark-grayish-blue);
+    font-size: 20px;
+    line-height: 70px;
+    margin-left: 50px;
+}
+
+.btn{
+    font-family: var(--Montserrat400);
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-left: 27px;
+    padding: 23px 0;
+    text-align: center;
+    width: 420px;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: var(--Darker-cyan);
+}
+
+.btn-text{
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
