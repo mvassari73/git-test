@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+
+.container{
+    max-width: 1440px;
+    padding: 2rem 4rem;
+    margin: 0 auto;
+}
+
+.main__header{
+  text-align: center  ;
+}
+
+.main__txt1{
+  font-size:2rem ;
+  color: var(--GrayishBlue);
+}
+
+.main__txt2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+}
+
+.main__txt3{
+  margin: 1rem auto 2rem auto;
+  width:33rem;
+  color: var(--GrayishBlue);
+}
+
+.main__footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 2%;;
+}
+
+.card{
+  width: 21.25rem;
+  box-shadow: 0px 9px 13px 9px var(--VeryLightGray);
+  padding: 2rem;
+  border-radius: .5rem;
+  flex-shrink: 0;
+}
+
+.card__border--Cyan{
+  border-top: 3px solid var(--Cyan);
+}
+
+.card__border--red{
+  border-top: 3px solid var(--Red);
+}
+
+.card__border--Orange{
+  border-top: 3px solid var(--Orange);
+}
+
+.card__border--Blue{
+  border-top: 3px solid var(--Blue);
+}
+
+.card__title{
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+}
+
+.card__subtitle{
+  font-size: small;
+  margin-top: 0.5rem;
+}
+
+.main__dobule-card{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__img1{
+  width: 64px;
+  height: 64px;
+  background-image: url(./images/icon-supervisor.svg);
+  margin: 2rem 0 0 auto;
+}
+.card__img2{
+  width: 64px;
+  height: 64px;
+  background-image: url(./images/icon-team-builder.svg);
+  margin: 2rem 0 0 auto;
+}
+.card__img3{
+  width: 64px;
+  height: 64px;
+  background-image: url(./images/icon-karma.svg);
+  margin: 2rem 0 0 auto;
+}
+.card__img4{
+  width: 64px;
+  height: 64px;
+  background-image: url(./images/icon-calculator.svg);
+  margin: 2rem 0 0 auto;
+}
+
+@media  screen and (max-width:1190px) {
+  .main__dobule-card{
+    flex-direction: row;
+  }
+
+  .main__footer{
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width:690px) {
+  .main__txt3{
+    width: 100%;
+  }
+}
+
